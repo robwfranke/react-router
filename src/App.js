@@ -47,7 +47,13 @@ function App() {
                     <Details/>
                 </Route>
 
-                <Route exact path="/details-cursus">
+                <Route  path="/details-cursus/:idCursus">
+
+                    {/* Dynamische URL
+                    Hier geef je een naam mee (idCursus), en deze kun je gebruiken in DetailsCursus
+                    http://localhost:3000/details-cursus/3    of http://localhost:3000/details-cursus/Piet
+                    */}
+
                     <DetailsCursus/>
                 </Route>
 
