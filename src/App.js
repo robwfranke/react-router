@@ -3,10 +3,13 @@ import React from 'react';
 import {
     Switch,
     Route,
-    NavLinkLink, NavLink, Link
+    NavLink,
+    Link
 } from 'react-router-dom';
 
 import './App.css';
+import DetailsCursus from "./pages/DetailsCursus";
+import Details from "./pages/Details";
 
 
 function App() {
@@ -41,29 +44,11 @@ function App() {
 
 
                 <Route exact path="/details">
-                    <section>
-                        <h1> details page</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, doloremque dolorum ducimus
-                            et eum id ipsum laudantium maiores nam porro ut vel vitae? Ad aut deleniti dolor dolorum
-                            eligendi fugit iste itaque iure laboriosam mollitia nam necessitatibus, nisi, odio odit
-                            officiis porro provident, qui quo quos reprehenderit ullam voluptatibus voluptatum?
-                        </p>
-                        <Link to="/">Terug naar HomePage</Link>
-                    </section>
+                    <Details/>
                 </Route>
 
                 <Route exact path="/details-cursus">
-                    <section>
-                        <h1> details-cursus page</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, doloremque dolorum ducimus
-                            et eum id ipsum laudantium maiores nam porro ut vel vitae? Ad aut deleniti dolor dolorum
-                            eligendi fugit iste itaque iure laboriosam mollitia nam necessitatibus, nisi, odio odit
-                            officiis porro provident, qui quo quos reprehenderit ullam voluptatibus voluptatum?
-                        </p>
-                        <Link to="/">Terug naar HomePage</Link>
-                    </section>
+                    <DetailsCursus/>
                 </Route>
 
 
